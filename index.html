@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinger</title>
+    <title>Ping XPHN Bot</title>
+    <script>
+        fetch('https://xphn-bot.glitch.me/', { mode: 'no-cors' })
+            .then(response => {
+                console.log('Request sent, but response is opaque.');
+                documet.getElementById("result").innerHTML = response.text();
+                return response.text();
+        });
+    </script>
 </head>
 <body>
+    <p id="result">Pinging keep-alive...</p>
 </body>
 </html>
