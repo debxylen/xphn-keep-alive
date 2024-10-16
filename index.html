@@ -8,7 +8,7 @@
         fetch('https://xphn-bot.glitch.me/', { mode: 'no-cors' })
             .then(response => {
                 console.log('Request sent, but response is opaque.');
-                documet.getElementById("result").innerHTML = 'Pinged!' + response.text();
+                document.getElementById("result").innerHTML = 'Pinged!' + response.text();
                 return response.text();
         });
     </script>
