@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
+  const pingUrl = "https://xphn-bot.glitch.me/";
   fetch(pingUrl, { mode: 'no-cors' })
     .then(response => {
         console.log('Ping sent!');
